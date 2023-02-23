@@ -4,7 +4,7 @@ function Menu(e) {
 }
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-const textArray = ["an Engineer", "a Programmer", "A prooblem Solver", "a Musician"];
+const textArray = ["an Engineer", "a Programmer", "A problem Solver", "a Musician"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
