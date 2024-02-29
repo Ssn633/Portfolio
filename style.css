@@ -1,3 +1,5 @@
+
+
 .container p {
     font-size: 3rem;
     padding: 0.5rem;
@@ -10,6 +12,10 @@
 .container p span.typed-text {
     font-weight: normal;
     color: #dd7732;
+}
+
+#About-me {
+    scroll-margin-top: 100px; /* You can adjust this value as needed */
 }
 
 .container p span.cursor {
@@ -39,3 +45,23 @@
         background-color: #ccc;
     }
 }
+/* For WebKit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+    width: 0.5px; /* You can adjust the width as needed */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency here */
+    border-radius: 4px; /* Adjust the border radius as needed */
+  }
+  
+  /* For Firefox */
+  ::-moz-scrollbar {
+    width: 8px; /* You can adjust the width as needed */
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency here */
+    border-radius: 4px; /* Adjust the border radius as needed */
+  }
+  
