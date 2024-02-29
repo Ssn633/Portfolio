@@ -9,222 +9,380 @@
     <link rel="stylesheet" href="style.css">
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link rel="icon" type="image/x-icon" href="/Imgs/Favicon.png">
+</head>
 
+<body class="overflow-y-scroll" style="max-height: 400px; scrollbar-width: thin;">
 
-    <body class="space-y-6">
-        <header class="bg-header ">
-            <nav class="p-5 dark:bg-gray-800 rounded-xl shadow md:flex md:items-center md:justify-between">
-                <div class="flex justify-between items-center ">
-                    <span class="md:text-lg xl:text-3xl lg:text-xl sm:text-lg font-sans cursor-pointer ">
-                       <a href="https://portfolio-ssn633.vercel.app/">
-                        <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Swamynath</span>
+    <header class="bg-header fixed top-0 w-full z-50">
+        <nav class="p-5 dark:bg-gray-800 rounded-xl shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+                <span class="md:text-lg xl:text-3xl lg:text-xl sm:text-lg font-sans cursor-pointer ">
+                    <a href="http://sn633.tech/?i=1">
+                        <span
+                            class="self-center text-3xl font-semibold  whitespace-nowrap dark:text-white">Swamynath</span>
                     </a>
-                    </span>
-                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-            <ion-icon name="menu" class="dark:text-white" onclick="Menu(this)"></ion-icon>
-          </span>
-                </div>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" class="dark:text-white" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
 
-                <ul class="dark:bg-gray-800 md:flex md:items-center z-[10] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#Home" class="text-xl text-neutral-50 hover:bg-blue-700 duration-500">HOME</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#About-me" class="text-xl text-neutral-50 hover:bg-blue-700 duration-500">ABOUT ME</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#Skills" class="text-xl text-neutral-50 hover:bg-blue-700 duration-500">SKILLS</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#Projects" class="text-xl text-neutral-50 hover:bg-blue-700 duration-500">PROJECTS</a>
-                        <li class="mx-4 my-6 md:my-0">
-                            <a href="#Contact" class="text-xl text-neutral-50 hover:bg-blue-700 duration-500">CONTACT</a>
-                        </li>
+            <ul
+                class="dark:bg-gray-800 md:flex md:items-center z-[10] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Home" class="text-xl text-neutral-50 hover:text-blue-300  duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#About-me" class="text-xl text-neutral-50 hover:text-blue-300 duration-500">ABOUT ME</a>
+                </li>
+                <!-- <li class="mx-4 my-6 md:my-0">
+                    <a href="#Skills" class="text-xl text-neutral-50 hover:text-blue-300 duration-500">SKILLS</a>
+                </li> -->
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Projects" class="text-xl text-neutral-50 hover:text-blue-300 duration-500">PROJECTS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        </header>
-        <section id="Home">
-            <div class="bg-section dark:bg-gray-600 rounded-xl">
-                <div class="flex p-5 xl:p-20">
-                    <div class="bgcontainer1 justify-center container  ">
+    <main class="mt-20 space-y-3">
 
-                        <h1 class="text-6xl font-sans text-white text-center">Hello 👋 I am Swamynath</h1>
-                        <div class="container">
-                            <p>I am <span class="typed-text"></span>
-                                <span class="cursor">&nbsp;</span></p>
-                        </div>
+        <section id="Home" class="h-screen  flex justify-center items-center dark:bg-gray-600 rounded-xl">
+            <div class="bg-section">
+                <img class="w-24 h-24 rounded-full mx-auto" src="/Imgs/Woring.webp" width="384" height="512">
+                <div class="flex flex-col items-center p-5 xl:p-20 space-y-6">
+                    <h1 class="text-6xl font-sans text-white">Hello!! I am Swamynath</h1>
+                    <div class="container">
+                        <p>I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
                     </div>
+                    <p class="text-white text-center mt-8">Welcome to my portfolio website. Feel free to explore!</p>
+                    <br>
+                    <a href="#About-me" class="mt-8 text-white">
+                        <ion-icon name="chevron-down-circle-outline" class="text-5xl"></ion-icon>
+                    </a>
+
+                </div>
+            </div>
         </section>
-                    
-        <section id="About-me">
-            <figure class="bg-slate-100 rounded-xl p-5 xl:p-20 dark:bg-gray-400">
-                <h1 class="text-6xl font-sans text-grey-800 text-center">About Me</h1>
-                <img class="w-24 h-24 rounded-full mx-auto" src="/Imgs/Logo.png" width="384" height="512">
+
+        <section id="About-me" class="h-auto rounded-xl p-5 xl:p-20 dark:bg-gray-400">
+            <div class="">
+                <img class="w-24 h-24 rounded-full mx-auto mt-10" src="/Imgs/Greeting.webp" width="384" height="512">
+                <h1 class="text-6xl font-semibold text-grey-800 text-center">About Me</h1>
                 <div class="pt-6 text-center space-y-4">
                     <blockquote>
                         <p class="text-lg font-medium text-grey-800">
-                            “A student with a forwardthinking attitude, exhibits a strong desire and motivation to learn and solve real world problems. Always open to learning, up-to-date with the latest technologies, acquires skill-sets required and synergize with the company aiming
-                            to work for its development.”
+                            “Passionate about data and equipped with a forward-thinking mindset and analytical prowess.
+                            Driven by a deep-seated desire to tackle real-world challenges, I thrive as an optimistic
+                            team player adept at navigating various scenarios. Continuously embracing learning, I stay
+                            abreast of cutting-edge technologies, swiftly acquiring new skill sets to adapt and excel.”
                         </p>
                     </blockquote>
-                    </figcaption>
                     <br>
-                    <h1 class="text-4xl font-sans text-grey-800 text-center">Know more about me<br>ƪ(˘⌣˘)ʃ</h1>
-                    <span class="flex flex-wrap items-center justify-center mt-3 space-x-3 sm:space-x-2 md:space-x-2 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-                    <a href="https://www.hackerrank.com/swamynath633"><img src="/Imgs/icons8-hackerrank-32.png"></a>
-                      <a href="https://github.com/Ssn633"><img src="/Imgs/icons8-github-32.png"></a>
-                     <a href="https://www.linkedin.com/in/swamynath-s-5139b2191/"><img src="/Imgs/icons8-linkedin-2-32.png"></a>
-                     </span>
-                </div>
-            </figure>
+                    <!-- Education Timeline -->
 
+                    <h1 class="text-3xl font-semibold text-grey-800 text-center mt-6">Education</h1>
+                    <ol class="items-center sm:flex justify-center">
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div
+                                    class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </div>
+                                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                            </div>
+                            <div class="mt-3 sm:pe-8">
+                                <h3 class="text-lg font-semibold text-gray-900 ">Bachelors in Technology</h3>
+                                <h3 class="text-sm font-semibold text-gray-700">Information Technology</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-600 ">2020 -
+                                    2024</time>
+
+                            </div>
+                        </li>
+
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div
+                                    class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </div>
+                                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                            </div>
+                            <div class="mt-3 sm:pe-8">
+                                <h3 class="text-lg font-semibold text-gray-900 ">Schooling</h3>
+                                <h3 class="text-sm font-semibold text-gray-700 ">HSC</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-600">2020</time>
+
+                            </div>
+                        </li>
+                    </ol>
+
+
+
+                    <h1 class="text-4xl font-sans text-grey-800 text-center">Know more about me<br></h1>
+                    <!-- Social Icons -->
+                    <div
+                        class="flex flex-wrap items-center justify-center mt-3 space-x-3 sm:space-x-2 md:space-x-2 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                        <a href="https://github.com/Ssn633"><img src="/Imgs/icons8-github-32.png"></a>
+                        <a href="https://www.linkedin.com/in/swamynath-s-5139b2191/"><img
+                                src="/Imgs/icons8-linkedin-2-32.png"></a>
+                    </div>
+                </div>
+                <a href="#Projects" class="mt-8 text-grey-900 flex justify-center">
+                    <ion-icon name="chevron-down-circle-outline" class="text-5xl"></ion-icon>
+                </a>
+            </div>
         </section>
 
-        <section id="Projects" class="bg-section  bg-gray-800 rounded-xl p-5 ">
-            <!-- fliping card in tailwind css -->
-            <div class="heading text-center">
+        <section id="Projects" class="h-auto dark:bg-gray-800 rounded-xl p-5 xl:p-15">
+            <div class="">
                 <h1 class="text-6xl font-sans text-gray-200 text-center">Projects</h1><br><br>
             </div>
-            <div class="min-h-fill flex items-center justify-center">
-                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="rounded overflow-hidden shadow-lg dark:bg-gray-400 font-sans text-grey-800 text-center">
-                        <div class="min-w-min font-bold text-xl mt-2 font-bold">To-Do</div>
-                        <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
-                            To-do is a web based task or project management system that allows users to create to-do lists and manage their tasks. Initially users have to create credentials to login to the system. After login, users can create their own to-do lists and add tasks to the lists. Users can also edit and delete the tasks. 
-                        <div class="items-center justify-centers mt-2 pb-2 ml-2 mr-2">
-                            <div class="font-bold text-xl mb-2 font-bold">Languages/Technologies used</div>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Django</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">PostgreSQL</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tailwind CSS</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
-                        </div>
+            <div id="carousel">
+                <div class="relative lg:w-[600px]  mx-auto w-auto">
+                    <!-- Project 1 -->
+                    <div class="slide relative">
+                        <div class="rounded overflow-hidden shadow-lg bg-gray-400 font-sans text-grey-800 text-center">
+                            <div class="min-w-min font-bold text-xl mt-2 font-bold">Web-based Piano</div>
+                            <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
+                                Crafted a dynamic web-based piano leveraging the tonal.js library to produce immersive
+                                sound experiences triggered by user keyboard input. This interactive project delivers an
+                                intuitive interface where users can effortlessly play melodies. By integrating tonal.js,
+                                the application achieves seamless sound generation with precise pitch and tone control.
+                            </p>
+                            <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
+                                <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">CSS</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tonal.js</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
+                            </div>
 
-                        <div class="px-6 mb-2 pb-2">
-                            <a target="_blank" href="https://to-do-ssn633.vercel.app/">
-                                <span class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="rounded overflow-hidden shadow-lg dark:bg-gray-400 font-sans text-grey-800 text-center">
-                        <div class="min-w-min font-bold text-xl mt-2 font-bold">Web-based Piano</div>
-                        <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
-                            Web-based piano uses tonal.js to produce piano sound when a PC's keyboard is pressed. 
-                        </p>
-                        <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
-                            <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">CSS</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tonal.js</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
-                        </div>
-
-                        <div class="px-6 mt-2 pb-2">
-                            <a target="_blank" href="https://web-piano-ssn633.vercel.app/">
-                                <span class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live Demo</span>
-                            </a>
+                            <div class="px-6 mt-2 pb-2">
+                                <a target="_blank" href="https://web-piano-ssn633.vercel.app/">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live
+                                        Demo</span>
+                                </a>
+                                <a target="_blank" href="https://github.com/Ssn633/Web-piano">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">
+                                        Github repo</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="rounded overflow-hidden shadow-lg dark:bg-gray-400 font-sans text-grey-800 text-center">
-                        <div class="min-w-min font-bold text-xl mt-2 font-bold">Weatherv1</div>
-                        <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
-                            Weatherv1 is a web-based application that allows users to easily check the current weather conditions in their location or any other location around the world. The application utilizes the BeautifulSoup API to webscrap weather information from google
-                            rether than using a weather API.
-                        </p>
-                        <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
-                            <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Django</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Web Scrapping</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tailwind CSS</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
-                        </div>
+                    <!-- Project 2 -->
+                    <div class="slide relative">
+                        <div class="rounded overflow-hidden shadow-lg bg-gray-400 font-sans text-grey-800 text-center">
+                            <div class="min-w-min font-bold text-xl mt-2 font-bold">Weatherv1</div>
+                            <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
+                                Weatherv1 is a web-based application that allows users to easily check the current
+                                weather
+                                conditions in their location or any other location around the world. The application
+                                utilizes the BeautifulSoup API to web scrape weather information from google
+                                rather than using a weather API.
+                            </p>
+                            <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
+                                <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Django</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Web
+                                    Scrapping</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
+                            </div>
 
-                        <div class="px-6 mt-2 pb-2">
-                            <a target="_blank" href="https://weather-app-ssn633.vercel.app/">
-                                <span class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live Demo</span>
-                            </a>
+                            <div class="px-6 mt-2 pb-2">
+                                <a target="_blank" href="https://weather-app-ssn633.vercel.app/">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live
+                                        Demo</span>
+                                </a>
+                                <a target="_blank" href="https://github.com/Ssn633/weather-app">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">
+                                        Github repo</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="rounded overflow-hidden shadow-lg dark:bg-gray-400 font-sans text-grey-800 text-center">
-                        <div class="min-w-min font-bold text-xl mt-2 font-bold">Typee</div>
-                        <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
-                            Typee is a web-based application that helps users improve their typing speed and accuracy. The application provides a set of typing exercises and tests that users can take to practice their typing skills.
-                        </p>
-                        <div class="items-center justify-centers mt-2 pb-2 ml-2 mr-2">
-                            <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">JavaScript</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">CSS</span>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
-                        </div>
+                    <!-- Project 3 -->
+                    <div class="slide relative">
+                        <div class="rounded overflow-hidden shadow-lg bg-gray-400 font-sans text-grey-800 text-center">
+                            <div class="min-w-min font-bold text-xl mt-2 font-bold">To-Do Manager</div>
+                            <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
+                                To-do is a web based task or project management system that allows users to create to-do
+                                lists and manage their tasks. Initially users have to create credentials to login to the
+                                system. After login, users can create their own to-do lists and add tasks to the lists.
+                                Users can also edit and delete the tasks.
+                            </p>
+                            <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
+                                <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Django</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">PostgreSQL</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Vercel</span>
+                            </div>
 
-                        <div class="px-6 mb-2 pb-2 ">
-                            <a target="_blank" href="https://typee-ssn633.vercel.app/">
-                                <span class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live Demo</span>
-                            </a>
+                            <div class="px-6 mt-2 pb-2">
+                                <a target="_blank" href="https://to-do-ssn633.vercel.app/">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Live
+                                        Demo</span>
+                                </a>
+                                <a target="_blank" href="https://github.com/Ssn633/To-do">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">
+                                        Github repo</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
-                </div>
-                
 
-        </section>
+                    <!-- Project 4 -->
+                    <div class="slide relative">
+                        <div class="rounded overflow-hidden shadow-lg bg-gray-400 font-sans text-grey-800 text-center">
+                            <div class="min-w-min font-bold text-xl mt-2 font-bold">
+                                ParaScope: Streamlined Paragraph Summarization And Topic Expansion Tool</div>
+                            <p class="text-gray-700 text-base mt-2 font-semibold ml-2 mr-2">
+                                ParaScope provides a solution that can solve mental exhaustion during the process of
+                                gathering information online.
+                                The system can provide a concise summary of any text/paragraph.
+                                This is achieved using an encoder that gathers a lot of contextual information from the
+                                input text and a decoder that chooses important parts of the text to include in the
+                                summary.
+                            </p>
+                            <div class="items-center justify-center mt-2 pb-2 ml-2 mr-2">
+                                <div class="font-bold text-xl mb-2 font-bold">Languages used/Technologies used</div>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Machine
+                                    Learning</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Natural
+                                    Language Processing</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">Google
+                                    Colab</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ml-2 mr-2 mb-2">mT-5
+                                    Model</span>
 
-        <section id="Skills" class="dark:bg-gray-600 p-5">
-            <h1 class="text-6xl font-sans text-white text-center ">Skills</h1><br><br>
-            <div class="min-h-fill flex items-center justify-center ">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50 "><img src="/Imgs/icons8-c++-96.png" class="h-12">C/C++</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-java-96.png" class="h-12">Java</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-python-96.png" class="h-12">Python</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-php-logo-96.png" class="h-12">Php</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-perl-96.png" class="h-12">Perl</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-html-5-96.png" class="h-12">HTML</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-css3-96.png" class="h-12">CSS</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-javascript-logo-96.png" class="h-12">JavaScript</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-mysql-logo-96.png" class="h-12"> MySQL</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" class="h-12">MongoDB</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-amazon-web-services-96.png" class="h-12">AWS</div>
-                    <div class="flex items-center justify-center text-gray-700  bg-gray-200 text-lg font-bold text-center p-10 rounded-lg hover:opacity-50"><img src="/Imgs/icons8-git-96.png" class="h-12">GIT</div>
+                            </div>
+
+                            <div class="px-6 mt-2 pb-2">
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/in/swamynath-s/overlay/1708091483568/single-media-viewer/?type=DOCUMENT&profileId=ACoAAC0tB18BVc5SceFPzbpsLkYt2abaxTHXBiQ">
+                                    <span
+                                        class="font-bold inline-block bg-gray-600 rounded-full px-3 py-1 text-lg font-semibold text-gray-200 mr-2 mb-2 hover:bg-gray-900">Report</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- The previous button -->
+            <!-- Previous button -->
+
+            <!-- <div class="flex justify-center relative">
+                <a class="absolute left-0 text-white hover:text-amber-500 cursor-pointer" onclick="moveSlide(-1)">❮</a>
+
+
+                <a class="absolute right-0 text-white hover:text-amber-500 cursor-pointer" onclick="moveSlide(1)">❯</a>
+            </div> -->
+
+            <br>
+            <!-- The dots -->
+            <div class="flex justify-center items-center space-x-5">
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(4)"></div>
+            </div>
+            </div>
+
         </section>
-        
 
+        <!-- <section id="Skills" class="h-auto dark:bg-gray-600 rounded-xl p-5 xl:p-15">
+            <div class="">
+                <h1 class="text-6xl font-sans text-white text-center">Skills</h1><br><br>
+            </div>
+            <div id="Cards" class="flex justify-center items-center">
+                
+            </div>
+        </section> -->
 
-        <footer id="Contact" class="p-4  items-center rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900">
-            <span class="flex flex-wrap items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">Made with 🫰 by Swamynath
+        <footer id="Contact"
+            class="p-4  items-center rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900">
+            <span
+                class="flex flex-wrap items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">Made
+                by Swamynath
             </span>
-            <ul class="flex flex-wrap items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <ul
+                class="flex flex-wrap items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
                     <a href="#Home" class="mr-4 hover:underline md:mr-6 ">Home</a>
                 </li>
                 <li>
                     <a href="#About-me" class="mr-4 hover:underline md:mr-6">About Us</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#Skills" class="mr-4 hover:underline md:mr-6">Skills</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#Projects" class="mr-4 hover:underline md:mr-6">Projects</a>
                 </li>
             </ul>
-            <span class="flex flex-wrap items-center justify-center mt-3 space-x-3 sm:space-x-2 md:space-x-2 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-               <a href="https://www.hackerrank.com/swamynath633"><img src="/Imgs/icons8-hackerrank-32.png" class="text-base"></a>
-               <a href="https://github.com/Ssn633"><img src="/Imgs/icons8-github-32.png" class="text-base"></a>
-                <a href="https://www.linkedin.com/in/swamynath-s-5139b2191/"><img src="/Imgs/icons8-linkedin-2-32.png" class="text-base"></a>
-                <a href="swamynath633@gmail.com"><img src="/Imgs/icons8-gmail-logo-32.png" class="text-base"></a>
-                <a href="https://t.me/S_n_633"><img src="/Imgs/icons8-telegram-app-32.png" class="text-base"></a>
+            <span
+                class="flex flex-wrap items-center justify-center mt-3 space-x-3 sm:space-x-2 md:space-x-2 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                <a target="_blank" href="https://github.com/Ssn633"><img src="/Imgs/icons8-github-32.png"
+                        class="text-base"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/swamynath-s-5139b2191/"><img
+                        src="/Imgs/icons8-linkedin-2-32.png" class="text-base"></a>
+                <a target="_blank" href="mailto:swamynath633@gmail.com"><img src="/Imgs/icons8-gmail-logo-32.png"
+                        class="text-base"></a>
+                <a target="_blank" href="https://t.me/S_n_633"><img src="/Imgs/icons8-telegram-app-32.png"
+                        class="text-base"></a>
             </span>
         </footer>
-        <script src="/script.js "></script>
-    </body>
+    </main>
+
+
+    <script src="/script.js "></script>
+</body>
 
 </html>
